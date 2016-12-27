@@ -1,0 +1,6 @@
+exportPattern("^[[:alpha:]]+")
+importFrom("grDevices", "chull", "rgb", "dev.new")
+importFrom("graphics", "abline", "arrows", "barplot", "box",
+             "identify", "layout", "layout.show", "par", "plot",
+             "points", "rect", "segments", "text", "title")
+importFrom("utils", "write.table")
