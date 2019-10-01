@@ -72,7 +72,7 @@ colores<-function(filas,columnas,coloresf,coloresc,conf,columnas2=NULL,coloresc2
             es distinto del numero de columnas de la segunda matriz")
     }
     return(list(coloresf,coloresc,coloresc2,conf))
-    }
+  }
 }
 
 preproc<-function(X,norm,cubo=FALSE,capas=FALSE)
