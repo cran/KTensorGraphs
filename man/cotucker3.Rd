@@ -4,6 +4,8 @@
 \alias{BGA}
 \alias{COIA}
 \alias{PTA}
+\alias{STATIS}
+\alias{STATISDUAL}
 \alias{BGCOIA}
 \alias{STATICO}
 \alias{COSTATIS}
@@ -45,6 +47,10 @@ COIA(X, Y, dimXx = NULL, dimYx = NULL, dimXy = NULL, dimYy = NULL, dimX = NULL,
      contr = FALSE, cotucker = FALSE, tcotucker = FALSE)
 PTA(X, dimX = NULL, dimY = NULL, coloresf = NULL, coloresc = NULL, norm = FALSE,
     contr = FALSE)
+STATIS(X, dimX = NULL, dimY = NULL, coloresf = NULL, norm = FALSE,
+    contr = FALSE)
+STATISDUAL(X, dimX = NULL, dimY = NULL, coloresc = NULL, norm = FALSE,
+    contr = FALSE)
 BGCOIA(X, Y, dimXx = NULL, dimYx = NULL, dimXy = NULL, dimYy = NULL, dimX = NULL,
        dimY = NULL, coloresf = NULL, coloresc1 = NULL, coloresc2 = NULL, norm = FALSE,
        contr = FALSE)
@@ -76,7 +82,7 @@ plotmt(dim1, dim2, dim3, sos, M1, M2, M3, lim1, lim2, lim3, names1, names2, name
        colores1, colores2, titles = FALSE)
 }
 \arguments{
-\item{X,Y}{the two arrays with the numerical data, with or without labels. By default, if the labels are omitted,
+\item{X,Y}{the two arrays or lists with the numerical data, with or without labels. By default, if the labels are omitted,
 the names 1, 2, ... are used for the first dimension, V1, V2, ... for the second dimension, or R1, R2, ... for the third dimension. They are similarly defined for the rest of the analysis.}
 \item{p,q,r}{the number of components for each dimension to be retained. By default, if they are omitted, the analysis for all the combinations is computed.}
 \item{P1,P2}{the pair of components for the first dimension to be plotted with the Tucker3 analysis from the Co-Tucker3 for the two arrays separately. By default, if they are omitted, these plots are not obtained.}
@@ -87,7 +93,7 @@ the names 1, 2, ... are used for the first dimension, V1, V2, ... for the second
 \item{dimCX,dimCY}{the axes for the third dimension to be plotted with the Co-Inertia analysis from the Co-Tucker3. By default, if they are omitted, these plots are not obtained.}
 \item{coloresf}{a vector with the labels of the colours for the first dimension. If it is omitted, black labels are used.}
 \item{coloresc1,coloresc2}{vectors with the labels of the colours for the second dimension of the two arrays. If they are omitted, black labels are used.}
-\item{coloresc}{vector with the labels of the colours for the second dimension of one array or one matrix for the rest of the analysis. If it is omitted, black labels are used.}
+\item{coloresc}{vector with the labels of the colours for the second dimension of one array or list or one matrix for the rest of the analysis. If it is omitted, black labels are used.}
 \item{maximo}{the maximum number of components for each dimension to be retained. By default, if it is omitted, 5 is used.}
 \item{iter}{the maximum number of iterations computed for each combination of components. By default, if it is omitted, 100 is used.}
 \item{tol}{the minimum tolerance. By default, if it is omitted, 1e-08 is used.}
