@@ -1,8 +1,8 @@
 Package: KTensorGraphs
 Type: Package
 Title: Co-Tucker3 Analysis of Two Sequences of Matrices
-Version: 1.0
-Date: 2020-07-30
+Version: 1.1
+Date: 2020-09-16
 Author: Miguel Rodriguez-Rosa <miguel_rosa90@usal.es> [aut, cre]
 Maintainer: Miguel Rodriguez-Rosa <miguel_rosa90@usal.es>
 Description: Provides a function called COTUCKER3() (Co-Inertia Analysis
@@ -19,6 +19,6 @@ Encoding: UTF-8
 LazyData: TRUE
 RoxygenNote: 5.0.1
 NeedsCompilation: no
-Packaged: 2020-07-30 10:59:33 UTC; Miguel
+Packaged: 2020-09-16 15:02:41 UTC; Miguel
 Repository: CRAN
-Date/Publication: 2020-07-30 11:12:10 UTC
+Date/Publication: 2020-09-16 15:10:03 UTC
